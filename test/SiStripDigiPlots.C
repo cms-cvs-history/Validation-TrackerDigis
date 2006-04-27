@@ -17,12 +17,12 @@ Char_t histo[200];
 // TIB
  
  if (1) {
-  TCanvas * Strip = new TCanvas("Strip","Strip",800,1000);
-   Strip->Divide(1,3);
+  TCanvas * Strip = new TCanvas("Strip","Strip",1000,1000);
+   Strip->Divide(2,2);
 
-   TH1* meAdcTIB_[3];
+   TH1* meAdcTIB_[4];
 
-   for (Int_t i=0; i<3; i++){
+   for (Int_t i=0; i<4; i++){
       sprintf(histo,"DQMData/adc_tib_%d;1",i+1);
       rfile->GetObject(histo ,meAdcTIB_[i]);
       meAdcTIB_[i];
