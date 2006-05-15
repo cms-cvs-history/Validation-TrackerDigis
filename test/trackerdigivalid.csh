@@ -1,6 +1,5 @@
 #! /bin/csh
 eval `scramv1 ru -csh`
-#cmsRun runP_tracker.cfg
 
 cmsRun trackerdigivalid.cfg 
 
