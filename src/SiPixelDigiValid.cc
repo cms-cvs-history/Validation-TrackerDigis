@@ -261,7 +261,7 @@ void SiPixelDigiValid::endJob() {
 
 void SiPixelDigiValid::analyze(const Event& e, const EventSetup& c){
 
- LogInfo("EventInfo") << " Run = " << e.id().run() << " Event = " << e.id().event();
+ //LogInfo("EventInfo") << " Run = " << e.id().run() << " Event = " << e.id().event();
 
  edm::ESHandle<TrackerGeometry> tracker;
  c.get<TrackerDigiGeometryRecord>().get( tracker );     
@@ -273,7 +273,7 @@ void SiPixelDigiValid::analyze(const Event& e, const EventSetup& c){
 
 
  if ( vec.size() > 0 ) 
- LogInfo("SiPixelDigiValid") <<"DetId Size = " <<vec.size();
+ //LogInfo("SiPixelDigiValid") <<"DetId Size = " <<vec.size();
 
  int ndigiperRingLayer1[8];
  int ndigiperRingLayer2[8];
