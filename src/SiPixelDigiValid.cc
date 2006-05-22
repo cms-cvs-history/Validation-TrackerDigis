@@ -482,7 +482,7 @@ for ( int i =0 ; i< 24; i++) {
            unsigned int blade = fdetid.blade();
            unsigned int panel = fdetid.panel();
            unsigned int mod   = fdetid.module();
-           LogInfo("SiPixelDigiValid")<<"EndcaP="<<side<<" Disk="<<disk<<" Blade="<<blade<<" Panel="<<panel<<" Module="<<mod;
+           //LogInfo("SiPixelDigiValid")<<"EndcaP="<<side<<" Disk="<<disk<<" Blade="<<blade<<" Panel="<<panel<<" Module="<<mod;
            for ( iter = begin ; iter != end; iter++ ) {
              if(side == 1 && disk == 1 && panel ==1 ){
                      if ( mod == 1 ) {
