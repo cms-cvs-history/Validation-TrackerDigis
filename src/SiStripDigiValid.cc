@@ -365,7 +365,7 @@ void SiStripDigiValid::analyze(const Event& e, const EventSetup& c){
 
 
 
- LogInfo("EventInfo") << " Run = " << e.id().run() << " Event = " << e.id().event();
+ //LogInfo("EventInfo") << " Run = " << e.id().run() << " Event = " << e.id().event();
  ESHandle<TrackerGeometry> tracker;
  c.get<TrackerDigiGeometryRecord>().get( tracker );
 
@@ -374,8 +374,8 @@ void SiStripDigiValid::analyze(const Event& e, const EventSetup& c){
  e.getByLabel(digiProducer, stripDigis);
  std::vector<unsigned int>  vec = stripDigis->detIDs();
 
- if ( vec.size() > 0 )
-    LogInfo("SiStripDigiValid")<<" DetId Size = "<< vec.size();
+// if ( vec.size() > 0 )
+//    LogInfo("SiStripDigiValid")<<" DetId Size = "<< vec.size();
 
 
    
