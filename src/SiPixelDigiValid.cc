@@ -319,7 +319,7 @@ for ( int i =0 ; i< 24; i++) {
              unsigned int layer  = bdetid.layer();   // Layer:1,2,3.
              unsigned int ladder = bdetid.ladder();  // Ladeer: 1-20, 32, 44. 
              unsigned int zindex = bdetid.module();  // Z-index: 1-8.
-             LogInfo("SiPixelDigiValid")<<"Barrel:: Layer="<<layer<<" Ladder="<<ladder<<" zindex="<<zindex;
+             //LogInfo("SiPixelDigiValid")<<"Barrel:: Layer="<<layer<<" Ladder="<<ladder<<" zindex="<<zindex;
              for ( iter = begin ; iter != end; iter++ ) {
                 if( layer == 1 ) {
                      ++ndigiperRingLayer1[zindex-1];
