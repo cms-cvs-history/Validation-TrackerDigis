@@ -1,53 +1,11 @@
 
 [oval run] =================================================
 [oval run] USER : huangxt
-[oval run] HOST : cmswn069.fnal.gov
+[oval run] HOST : cmswn063.fnal.gov
 [oval run] run tool: oval
-[oval run] final instruction: trackerdigivalid.csh
+[oval run] final instruction: digivalid.csh
 [oval run] =================================================
 
-\033[1mWARNING: CMS environment is already set\033[0m
-	CMS_PATH=/uscmst1/prod/sw/cms
-Do nothing ...
-If you would like to change this environment,
-please start a new session and execute again:
-	source cshrc [ nightly | uaf | ibrix ]
- 
-	nightly		CMSSW software built nightly
-			available on any desktop with AFS
-
-	uaf	    	CMSSW software releases
- 			available on the UAF 
-			or Fermilab desktops with /uscmst1 mounted 
-
-	ibrix		CMS software releases
- 			available on the UAF 
-			or Fermilab desktops with /uscms mounted
- 
-	fnal		obsolete CMS software releases
-			available on any desktop with AFS
- 			The use of this environment is depricated.
-\033[1mWARNING: CMS environment is already set\033[0m
-	CMS_PATH=/uscmst1/prod/sw/cms
-Do nothing ...
-If you would like to change this environment,
-please start a new session and execute again:
-	source cshrc [ nightly | uaf | ibrix ]
- 
-	nightly		CMSSW software built nightly
-			available on any desktop with AFS
-
-	uaf	    	CMSSW software releases
- 			available on the UAF 
-			or Fermilab desktops with /uscmst1 mounted 
-
-	ibrix		CMS software releases
- 			available on the UAF 
-			or Fermilab desktops with /uscms mounted
- 
-	fnal		obsolete CMS software releases
-			available on any desktop with AFS
- 			The use of this environment is depricated.
  DaqMonitorROOTBackEnd info: no directory has been 
  specified to store monitoring objects; using root...
  Adding new TH1F object adc_tib_layer1_extmodule1_zp to top directory 
@@ -775,10 +733,10 @@ MagneticFieldVolumes:MAGF is the ROOT
 Element: Constant (64)
 cms:OCMS is the ROOT
 ======== Geometry Configuration read ==========
-Element: Constant (2229)
+Element: Constant (1969)
 Creating a new Timing Report
-StopWatch bias 4.54529e-08
-CPUWatch bias 0.000326
+StopWatch bias 3.99047e-08
+CPUWatch bias 0.000164
 
          ___________________________________        
       .-'                                   '-.     
@@ -793,7 +751,7 @@ CPUWatch bias 0.000326
  Saved file stripdigihisto.root with collection of monitoring objects 
  Saved file pixeldigihisto.root with collection of monitoring objects 
 
-Main Thread CPU elapsed time 448391u 590s
+Main Thread CPU elapsed time 293396u 322s
   *******************************************
   *                                         *
   *        W E L C O M E  to  R O O T       *
@@ -813,7 +771,7 @@ Enclose multiple statements between { }.
 
 Processing SiPixelDigiCompare.C...
 Initializing HistoCompare... 
-(class HistoCompare)166186576
+(class HistoCompare)188798712
 Initializing HistoCompare... 
 [OVAL] adc_layer1ring1 PV = 1
 [OVAL] adc_layer1ring2 PV = 1
@@ -1039,7 +997,7 @@ Info in <TCanvas::Print>: eps file ColZpDisk2Panel2_compare.eps has been created
 [OVAL] digi_zm_disk1_panel2 PV = 1
 [OVAL] digi_zm_disk2_panel1 PV = 1
 [OVAL] digi_zm_disk2_panel2 PV = 1
-Info in <TCanvas::Print>: eps file DigiNumOfEndcap_compare.eps has been created
+Info in <TCanvas::Print>: eps file DigiMultiOfEndcap_compare.eps has been created
   *******************************************
   *                                         *
   *        W E L C O M E  to  R O O T       *
@@ -1059,7 +1017,7 @@ Enclose multiple statements between { }.
 
 Processing SiStripDigiCompare.C...
 Initializing HistoCompare... 
-(class HistoCompare)180729888
+(class HistoCompare)185150808
 Initializing HistoCompare... 
 [OVAL] ndigi_tib_layer_1_zm PV = 1
 [OVAL] ndigi_tib_layer_2_zm PV = 1
@@ -1667,4 +1625,12 @@ Info in <TCanvas::Print>: eps file StripNumOfTECWheel9Compare_ZP.eps has been cr
 [oval run] ==========================================
 [oval run] result: OK
 [oval run] ==========================================
+
+[oval diff] ================================================
+[oval diff] diff line: /^\[OVAL\](.*)$/
+[oval diff] ================================================
+
+[oval diff] =========================================
+[oval diff] result: OK
+[oval diff] =========================================
 
