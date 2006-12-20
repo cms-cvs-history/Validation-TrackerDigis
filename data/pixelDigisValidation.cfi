@@ -1,0 +1,4 @@
+ module pixelDigisValid  = SiPixelDigiValid {                  
+   untracked string outputFile = 'pixeldigihisto.root'        
+   InputTag src = siPixelDigis                                
+ }          

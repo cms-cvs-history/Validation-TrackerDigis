@@ -1,0 +1,5 @@
+ module stripDigisValid = SiStripDigiValid {                   
+   untracked string outputFile = 'stripdigihisto.root'        
+   untracked bool verbose = true                              
+   InputTag src = siStripDigis                                
+ }         
