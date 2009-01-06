@@ -1,5 +1,0 @@
-include "Validation/TrackerDigis/data/stripDigisValidation.cfi"
-include "Validation/TrackerDigis/data/pixelDigisValidation.cfi"
-
-
-sequence trackerDigisValidation = {pixelDigisValid, stripDigisValid}
