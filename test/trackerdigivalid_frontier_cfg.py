@@ -47,7 +47,7 @@ process.SimpleMemoryCheck = cms.Service("SimpleMemoryCheck")
 #UNCOMMENTLA process.prefer("SiPixelFakeLorentzAngleESSource")
 #UNCOMMENTLA process.prefer("SiStripLAFakeESSource")
 #UNCOMMENTNOISE process.prefer("SiStripNoiseFakeESSource")
-process.digis = cms.Sequence(process.trDigi*process.trackerDigisValidation)
+process.digis = cms.Sequence(process.trackerDigisValidation)
 process.p1 = cms.Path(process.mix*process.digis)
 process.GlobalTag.globaltag = 'SCENARIO::All'
 

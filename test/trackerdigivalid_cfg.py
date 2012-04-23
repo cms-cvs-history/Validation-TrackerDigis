@@ -35,7 +35,7 @@ process.Timing = cms.Service("Timing")
 
 process.SimpleMemoryCheck = cms.Service("SimpleMemoryCheck")
 
-process.digis = cms.Sequence(process.trDigi*process.trackerDigisValidation)
+process.digis = cms.Sequence(process.trackerDigisValidation)
 process.p1 = cms.Path(process.mix*process.digis)
 
 
